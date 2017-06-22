@@ -10,6 +10,7 @@ intent.setClass(context,XX.class);
 context.startActivity(intent);
 ```
 >   <b>解决方法： context=XXActivity即把getApplicationContext换为Activity内的context
+
 ##第三库经常出现的bug
   1. Glide
   >Java.lang.IllegalArgumentException:You cannot start a load for a destroyed activity  
