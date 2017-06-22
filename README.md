@@ -1,11 +1,12 @@
 # Android-Frequently-Asked-Questions
 ## Android 异常
 1.Calling startActivity() from outside of an Activity  context requires the FLAG_ACTIVITY_NEW_TASK flag. Is this really what you want?
-> 错误代码      context=getApplicationContext()
-                Intent intent = new Intent();
-                intent.setClass(context,XX.class);
-                context.startActivity(intent);
-   <b>解决方法： context=XXActivity即把getApplicationContext换为Activity内的context
+> 错误代码     
+context=getApplicationContext()
+Intent intent = new Intent();
+intent.setClass(context,XX.class);
+context.startActivity(intent);
+>   <b>解决方法： context=XXActivity即把getApplicationContext换为Activity内的context
 ##第三库经常出现的bug
   1. Glide
   >Java.lang.IllegalArgumentException:You cannot start a load for a destroyed activity  
